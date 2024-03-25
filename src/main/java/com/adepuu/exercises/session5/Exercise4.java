@@ -1,6 +1,7 @@
 package com.adepuu.exercises.session5;
 
-import java.util.HashSet;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -32,18 +33,14 @@ public class Exercise4
             int[] result = removeDuplicates(nums);
 
             // Output the result
-            System.out.print("Output: ");
-            for (int num : result)
-            {
-                System.out.print(num + " ");
-            }
+            System.out.println( "Output: " + Arrays.toString(result) );
 
             scanner.close();
         }
 
         public static int[] removeDuplicates(int[] nums)
         {
-            Set<Integer> set = new HashSet<>();
+            Set<Integer> set = new LinkedHashSet<>();
             for (int num : nums)
             {
                 set.add(num);

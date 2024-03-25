@@ -1,5 +1,6 @@
 package com.adepuu.exercises.session5;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercise2
@@ -27,19 +28,15 @@ public class Exercise2
                 arr[i] = scanner.nextInt();
             }
 
-            // Input number of positions to rotate
+            // Input the number of positions to rotate
             System.out.print("Enter the number of positions to rotate: ");
             int d = scanner.nextInt();
 
-            // Perform array rotation
+            // Rotate the array
             rotateArray(arr, d);
 
-            // Output the rotated array
-            System.out.print("Rotated array: ");
-            for (int num : arr)
-            {
-                System.out.print(num + " ");
-            }
+            // Output the result
+            System.out.println( "Output: " + Arrays.toString(arr) );
 
             scanner.close();
         }

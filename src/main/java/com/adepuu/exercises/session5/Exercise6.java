@@ -1,5 +1,8 @@
 package com.adepuu.exercises.session5;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Exercise6
@@ -14,7 +17,7 @@ public class Exercise6
      * [ 1, 2, 1, 3, 5, 1 ] to
      * Final result : [2, 3, 5]
      */
-    public static class RemoveElementFromArray
+    public static class RemoveAllOccurrences
     {
         public static void main(String[] args)
         {
@@ -23,11 +26,11 @@ public class Exercise6
             // Input array elements
             System.out.print("Enter the number of elements in the array: ");
             int n = scanner.nextInt();
-            int[] arr = new int[n];
+            int[] array = new int[n];
             System.out.println("Enter the elements of the array:");
             for (int i = 0; i < n; i++)
             {
-                arr[i] = scanner.nextInt();
+                array[i] = scanner.nextInt();
             }
 
             // Input the key element to remove
@@ -35,37 +38,34 @@ public class Exercise6
             int key = scanner.nextInt();
 
             // Remove all occurrences of the key element from the array
-            int[] result = removeElement(arr, key);
+            int[] result = removeAllOccurrences(array, key);
 
             // Output the result
-            System.out.print("Output: ");
-            for (int num : result)
-            {
-                System.out.print(num + " ");
-            }
+            System.out.println( "Output: " + Arrays.toString(result) );
 
             scanner.close();
         }
 
-        public static int[] removeElement(int[] arr, int key)
+        public static int[] removeAllOccurrences(int[] array, int key)
         {
-            int count = 0;
-            for (int num : arr)
+            List<Integer> list = new ArrayList<>();
+
+            // Add non-key elements to the list
+            for (int num : array)
             {
                 if (num != key)
                 {
-                    count++;
+                    list.add(num);
                 }
             }
-            int[] result = new int[count];
-            int index = 0;
-            for (int num : arr)
+
+            // Convert list to array
+            int[] result = new int[list.size()];
+            for (int i = 0; i < list.size(); i++)
             {
-                if (num != key)
-                {
-                    result[index++] = num;
-                }
+                result[i] = list.get(i);
             }
+
             return result;
         }
     }
