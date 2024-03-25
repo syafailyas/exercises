@@ -48,7 +48,7 @@ public class Exercise4
             {
                 set.add(num);
             }
-            int[] result = new int[set.size()];
+            int[] result = new int[ set.size() ];
             int i = 0;
             for (int num : set)
             {
