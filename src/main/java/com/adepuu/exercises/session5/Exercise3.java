@@ -1,5 +1,9 @@
 package com.adepuu.exercises.session5;
 
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
 public class Exercise3
 {
     /**
@@ -17,7 +21,43 @@ public class Exercise3
      * Input : nums = [1,1,1,3,3,4,3,2,4,2]
      * Output : true
      */
-    public static void main(String[] args)
+    public static class ContainsDuplicates
     {
+        public static void main(String[] args)
+        {
+            Scanner scanner = new Scanner(System.in);
+
+            // Input array elements
+            System.out.print("Enter the number of elements in the array: ");
+            int n = scanner.nextInt();
+            int[] nums = new int[n];
+            System.out.println("Enter the elements of the array:");
+            for (int i = 0; i < n; i++)
+            {
+                nums[i] = scanner.nextInt();
+            }
+
+            // Check if array contains duplicates
+            boolean hasDuplicates = containsDuplicates(nums);
+
+            // Output the result
+            System.out.println("Output: " + hasDuplicates);
+
+            scanner.close();
+        }
+
+        public static boolean containsDuplicates(int[] nums)
+        {
+            Set<Integer> set = new HashSet<>();
+            for (int num : nums)
+            {
+                if ( set.contains(num) )
+                {
+                    return true;
+                }
+                set.add(num);
+            }
+            return false;
+        }
     }
 }
