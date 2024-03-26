@@ -2,21 +2,24 @@ package com.adepuu.exercises.session5;
 
 import java.util.Arrays;
 
-public class Exercise7 {
+public class Exercise7
+{
     /**
      * Java String Program to Check Anagram
      * <p>
-     * Example 1:
-     * Input: s = "anagram", t = "nagaram"
-     * Output: true
+     * Example 1 :
+     * Input : s = "anagram", t = "nagaram"
+     * Output : true
      * <p>
-     * Example 2:
-     * Input: s = "rat", t = "car"
-     * Output: false
+     * Example 2 :
+     * Input : s = "rat", t = "car"
+     * Output : false
      */
-    public boolean isAnagram(String s, String t) {
+    public boolean isAnagram(String s, String t)
+    {
         // Check if both strings have the same length
-        if (s.length() != t.length()) {
+        if ( s.length() != t.length() )
+        {
             return false;
         }
 
@@ -29,8 +32,10 @@ public class Exercise7 {
         Arrays.sort(tArray);
 
         // Compare sorted character arrays
-        for (int i = 0; i < sArray.length; i++) {
-            if (sArray[i] != tArray[i]) {
+        for (int i = 0; i < sArray.length; i++)
+        {
+            if ( sArray[i] != tArray[i] )
+            {
                 return false;
             }
         }
