@@ -27,17 +27,18 @@ public class Exercise1
             while (true)
             {
                 System.out.print("Enter a number or 'q' to finish: ");
-                if ( scanner.hasNextInt() )
+                try
                 {
-                    int num = scanner.nextInt();
+                    String input = scanner.next();
+                    if ( input.equalsIgnoreCase("q") )
+                    {
+                        break;
+                    }
+                    int num = Integer.parseInt(input);
                     sum += num;
                     count++;
                 }
-                else if ( scanner.next().equalsIgnoreCase("q") )
-                {
-                    break;
-                }
-                else
+                catch (NumberFormatException e)
                 {
                     System.out.println("Invalid input. Please enter a valid number or 'q' to finish.");
                 }
