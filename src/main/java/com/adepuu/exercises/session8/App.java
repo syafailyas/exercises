@@ -1,11 +1,12 @@
 package com.adepuu.exercises.session8;
 
-public class App {
+public class App
+{
     /**
-     * Manages user registration, login, and task management for the To-Do List application.
+     * Manages user registration, login and task management for the To-Do List application.
      * <p>
-     * This function enables users to register, log in, and manage their tasks through the console.
-     * It provides a clear and concise menu with options to add a task, view tasks, delete a task, or log out.
+     * This function enables users to register, log in and manage their tasks through the console.
+     * It provides a clear and concise menu with options to add a task, view tasks, delete a task or log out.
      * The system handles user input errors gracefully, providing clear feedback and prompting for correct input.
      * </p>
      * <br/>
@@ -37,7 +38,8 @@ public class App {
      *     <li>Data does not need to be stored in a File. Instead, store it inside a Map or List and let the data gone when program finished</li>
      * </ul>
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         /*
          Create menu functionalities
          Split classes
