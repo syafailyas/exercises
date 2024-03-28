@@ -1,12 +1,15 @@
 package com.adepuu.loop;
 
-public class ForLoop {
-    public static void main(String[] args) {
+public class ForLoop
+{
+    public static void main(String[] args)
+    {
         // a simple for loop in Java, which is used to execute a block of code a specific number of times.
         // The loop iterates from 1 to loopCount, which is set to 10,
         // and prints the iteration number at each step
         int loopCount = 10;
-        for (int iterator = 1; iterator <= loopCount; iterator++) {
+        for (int iterator = 1; iterator <= loopCount; iterator++)
+        {
             System.out.println("Iteration No " + iterator);
         }
 
@@ -16,12 +19,14 @@ public class ForLoop {
         String[] nameSplitted = nameRaw.split(" ");
 
         // enhanced for-each loop
-        for (String eachName : nameSplitted) {
+        for (String eachName : nameSplitted)
+        {
             System.out.println(eachName);
         }
 
         // Traditional loop
-        for (int iterator = 0; iterator < nameSplitted.length; iterator++) {
+        for (int iterator = 0; iterator < nameSplitted.length; iterator++)
+        {
             System.out.println(nameSplitted[iterator]);
         }
 
@@ -32,8 +37,10 @@ public class ForLoop {
         char[] names = {'A', 'B', 'C', 'D'};
         char searchTarget = 'B';
 
-        for (int i = 0; i < names.length; i++) {
-            if (names[i] == searchTarget) {
+        for (int i = 0; i < names.length; i++)
+        {
+            if (names[i] == searchTarget)
+            {
                 System.out.println(searchTarget + " Found at index " + i);
                 break;
                 // then quit the loop
@@ -44,12 +51,14 @@ public class ForLoop {
         // This example demonstrates how to use continue within a for loop to skip over elements
         // that do not meet a certain criteria, such as filtering out even numbers from a list of integers.
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++)
+        {
             // Skip even numbers
-            if (numbers[i] % 2 == 0) {
+            if (numbers[i] % 2 == 0)
+            {
                 continue;
             }
-            System.out.println(numbers[i]);
+            System.out.println( numbers[i] );
         }
     }
 }

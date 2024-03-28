@@ -1,6 +1,7 @@
 package com.adepuu.exercises.session6;
 
-public class Exercise1 {
+public class Exercise1
+{
     /**
      * Write a Java Program to Enter numbers to calculate average and enter 'q' to finish.
      *
@@ -12,7 +13,5 @@ public class Exercise1 {
      *
      * Explanation: print “Invalid input. Please enter a valid number or 'q' to finish.” if user not inserting the expected number or character.
      */
-    public static void main(String[] args) {
-
-    }
+    public static void main(String[] args) { }
 }

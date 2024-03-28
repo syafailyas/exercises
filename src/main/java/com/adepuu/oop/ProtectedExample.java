@@ -3,8 +3,10 @@ package com.adepuu.oop;
 import com.adepuu.oop.Bank.Bank;
 import com.adepuu.oop.Bank.BankAccount;
 
-public class ProtectedExample {
-    public static void main(String[] args) {
+public class ProtectedExample
+{
+    public static void main(String[] args)
+    {
         Bank bankBri = new Bank("1241421", "BRI");
         bankBri.deposit(100000);
         System.out.println(bankBri.getBalance());
