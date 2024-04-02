@@ -1,7 +1,9 @@
 package com.adepuu.oop.overriding;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         Lobster lobster = new Lobster();
         lobster.eat();
 

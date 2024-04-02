@@ -1,11 +1,13 @@
 package com.adepuu.oop.polymorphism.creditcard;
 
 // Define an abstract class or interface for CreditCard
-public abstract class CreditCard {
+public abstract class CreditCard
+{
     protected String cardNumber;
     protected String cardHolderName;
 
-    public CreditCard(String cardNumber, String cardHolderName) {
+    public CreditCard(String cardNumber, String cardHolderName)
+    {
         this.cardNumber = cardNumber;
         this.cardHolderName = cardHolderName;
     }

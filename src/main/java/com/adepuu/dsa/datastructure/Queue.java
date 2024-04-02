@@ -1,45 +1,57 @@
 package com.adepuu.dsa.datastructure;
 
-public class Queue {
-    private int maxSize;
+public class Queue
+{
+    private final int maxSize;
     private int front;
     private int rear;
-    private int[] queueArray;
+    private final int[] queueArray;
 
-    public Queue(int size) {
+    public Queue(int size)
+    {
         maxSize = size;
         queueArray = new int[maxSize];
         front = 0;
         rear = -1;
     }
 
-    public void enqueue(int value) {
-        if (rear == maxSize - 1) {
+    public void enqueue(int value)
+    {
+        if (rear == maxSize - 1)
+        {
             System.out.println("Queue is full. Cannot enqueue " + value);
-        } else {
+        }
+        else
+        {
             queueArray[++rear] = value;
         }
     }
 
-    public int dequeue() {
-        if (front > rear) {
+    public int dequeue()
+    {
+        if (front > rear)
+        {
             System.out.println("Queue is empty. Cannot dequeue.");
             return -1;
-        } else {
+        }
+        else
+        {
             return queueArray[front++];
         }
     }
 
-    public int peek() {
-        if (front > rear) {
+    public int peek()
+    {
+        if (front > rear)
+        {
             System.out.println("Queue is empty.");
             return -1;
-        } else {
+        }
+        else
+        {
             return queueArray[front];
         }
     }
 
-    public static void main(String[] args) {
-
-    }
+    public static void main(String[] args) { }
 }

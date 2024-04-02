@@ -1,7 +1,9 @@
 package com.adepuu.dsa.datastructure.BinaryTree;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         BinaryTree bt = new BinaryTree();
 
         // Inserting values into the binary tree
@@ -20,4 +22,3 @@ public class Main {
         System.out.println(isExist);
     }
 }
-

@@ -1,6 +1,7 @@
 package com.adepuu.exercises.session10;
 
-public class LibraryManagement {
+public class LibraryManagement
+{
     /**
      * Acceptance Criteria:
      * - Each material should have an availability count, and the program should check if the material is still available for borrowing.
@@ -13,7 +14,5 @@ public class LibraryManagement {
      * - The program doesn't require a menu system; focus should be on Object-Oriented Programming (OOP) and inheritance implementation.
      * - Make sure to implement Inheritance and Polymorphism properly
      */
-    public static void main(String[] args) {
-
-    }
+    public static void main(String[] args) { }
 }

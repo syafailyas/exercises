@@ -1,6 +1,7 @@
 package com.adepuu.conditional;
 
-public class IfElseDemo {
+public class IfElseDemo
+{
     /**
      * <h1>Java Programming Demo: Conditional</h1>
      *
@@ -12,7 +13,7 @@ public class IfElseDemo {
      * of each topic.</p>
      *
      * <p>For additional teaching materials, visit the following link:
-     * <a href="https://drive.google.com/file/d/1f3ARDHXe1GIiu_h5tdgyQ7k9Z0m-PmYS/view?usp=sharing">Teaching Materials</a>.</p>
+     * <a href = "https://drive.google.com/file/d/1f3ARDHXe1GIiu_h5tdgyQ7k9Z0m-PmYS/view?usp=sharing">Teaching Materials</a>.</p>
      *
      * <p>For any issues or questions, please contact the author on GitHub.</p>
      *
@@ -24,49 +25,69 @@ public class IfElseDemo {
      * <p>This class contains a <code>main</code> method that can be executed to run the demonstrations.</p>
      */
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+    {
         // A basic IF-ELSE statement checks a condition and executes one block of code if the condition is true,
         // and another block of code if the condition is false.
         int number = 5;
-        if (number > 0) {
+        if (number > 0)
+        {
             System.out.println("The number is positive.");
-        } else {
+        }
+        else
+        {
             System.out.println("The number is negative or zero.");
         }
 
-        // Multiple/compound IF-ELSE also known as an IF-ELSE-IF ladder, allows for checking multiple conditions
+        // Multiple / compound IF-ELSE also known as an IF-ELSE-IF ladder, allows for checking multiple conditions
         // in a sequence. It's useful for categorizing or sorting conditions.
         int score = 85;
-        if (score >= 90) {
+        if (score >= 90)
+        {
             System.out.println("A");
-        } else if (score >= 80) {
+        }
+        else if (score >= 80)
+        {
             System.out.println("B");
-        } else if (score >= 70) {
+        }
+        else if (score >= 70)
+        {
             System.out.println("C");
-        } else if (score >= 60) {
+        }
+        else if (score >= 60)
+        {
             System.out.println("D");
-        } else {
+        }
+        else
+        {
             System.out.println("F");
         }
-
 
         // Nested IF-ELSE statements are used when a condition depends on another condition.
         // This is useful for checking multiple conditions in sequence.
         int numberB = 24;
 
-        if (numberB % 2 == 0) {
+        if (numberB % 2 == 0)
+        {
             System.out.print("Even ");
-            if (numberB % 6 == 0) {
+            if (numberB % 6 == 0)
+            {
                 System.out.println("and divisible by 6");
-            } else {
+            }
+            else
+            {
                 System.out.println("and not divisible by 6");
             }
-        } else {
+        }
+        else
+        {
             System.out.print("Odd ");
-            if (numberB % 3 == 0) {
+            if (numberB % 3 == 0)
+            {
                 System.out.println("and divisible by 3");
-            } else {
+            }
+            else
+            {
                 System.out.println("and not divisible by 3");
             }
         }

@@ -1,7 +1,9 @@
 package com.adepuu.dsa.datastructure.tree;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         TreeNode<String> root = new TreeNode<>("Root");
         TreeNode<String> child1 = new TreeNode<>("Child 1");
         TreeNode<String> child2 = new TreeNode<>("Child 2");
@@ -18,12 +20,16 @@ public class Main {
         printTree(root, 0);
     }
 
-    private static void printTree(TreeNode<String> node, int level) {
-        for (int i = 0; i < level; i++) {
+    private static void printTree(TreeNode<String> node, int level)
+    {
+        for (int i = 0; i < level; i++)
+        {
             System.out.print(" ");
         }
-        System.out.println(node.getValue());
-        for (TreeNode<String> child : node.getChildNodes()) {
+
+        System.out.println( node.getValue() );
+        for ( TreeNode<String> child : node.getChildNodes() )
+        {
             printTree(child, level + 1);
         }
     }

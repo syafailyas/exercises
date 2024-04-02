@@ -1,15 +1,18 @@
 package com.adepuu.conditional;
 
-public class SwitchCase {
+public class SwitchCase
+{
     static enum Day { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY; }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         // Classic Switch-case
         // In this example, the switch statement evaluates the day variable and
         // assigns the number of letters in the day's name to numLetters based on the day of the week
         int numLetters = 0;
         Day day = Day.WEDNESDAY;
-        switch (day) {
+        switch (day)
+        {
             case MONDAY:
             case FRIDAY:
             case SUNDAY:
@@ -35,11 +38,13 @@ public class SwitchCase {
         // The yield keyword is used to return a value from each case,
         // making the code more readable and eliminating the need for break statements.
         int number = 10;
-        String result = switch (number) {
+        String result = switch (number)
+        {
             case 1 -> "Number is 1";
             case 2 -> "Number is 2";
             case 3 -> "Number is 3";
-            default -> {
+            default ->
+            {
                 if (number < 0) yield "Negative Number";
                 else if (number > 0) yield "Positive number, but more than 3";
                 yield "Thats 0";
@@ -53,7 +58,8 @@ public class SwitchCase {
         // whether it's a weekday (true) or a weekend (false). This is achieved without using the yield keyword,
         // which is a feature introduced in Java 14 to simplify switch expressions by allowing them to return values directly.
         Day today = Day.MONDAY;
-        var isWeekday = switch (today) {
+        var isWeekday = switch (today)
+        {
             case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> true;
             case SATURDAY, SUNDAY -> false;
         };
