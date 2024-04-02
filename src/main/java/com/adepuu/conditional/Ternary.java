@@ -1,9 +1,10 @@
 package com.adepuu.conditional;
 
-public class Ternary {
+public class Ternary
+{
     static int number = 10;
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+    {
         // basic syntax for ternary operator in java is
         // variable = condition ? expressionIfTrue : expressionIfFalse;
         int num1 = 10;

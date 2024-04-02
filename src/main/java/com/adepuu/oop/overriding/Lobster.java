@@ -1,13 +1,16 @@
 package com.adepuu.oop.overriding;
 
-public class Lobster extends Animal {
+public class Lobster extends Animal
+{
     @Override
-    public void eat() {
+    public void eat()
+    {
         System.out.println("Slurp Slurp!");
     }
 
     @Override
-    public void eat(String food) {
+    public void eat(String food)
+    {
         System.out.println("Slurp Slurp!");
     }
 }

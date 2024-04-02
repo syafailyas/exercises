@@ -1,11 +1,13 @@
 package com.adepuu.exercises.session7;
 
-public class TicketingSystem {
+// TicketingSystem class
+public class TicketingSystem
+{
     /**
      * Write a Java Program using OOP about simple ticketing system for an event.
      * <p>
      * Feature Acceptance Criteria:
-     * - Ticket Creation: The system should allow for the creation of a new ticket with a unique identifier, event name, and price.
+     * - Ticket Creation: The system should allow for the creation of a new ticket with a unique identifier, event name and price.
      * - Ticket Booking: Users should be able to book a ticket by selecting an event and providing their details.
      * - Ticket Validation: The system should check if the ticket is still available for booking.
      * - Ticket Confirmation: After booking, the system should issue a confirmation ticket to the user.
@@ -18,25 +20,31 @@ public class TicketingSystem {
      * <p>
      * Start your project from the main method below ;) have fun!
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         int maxTicket = 10;
 
         // User book ticket for an event
         Event event = new Event(maxTicket);
 
-        for (int i = 0; i < 50; i++) {
-            User user = new User(StringUtil.generateName());
+        for (int i = 0; i < 50; i++)
+        {
+            User user = new User( StringUtil.generateName() );
 
             // User book ticket for an event
-            var bookingStatus = event.bookTicket(user.getID());
-            if (bookingStatus) {
-                var confirmedTicket = event.confirmTicket(user.getID());
-                if (confirmedTicket != null) {
+            var bookingStatus = event.bookTicket( user.getID() );
+            if (bookingStatus)
+            {
+                var confirmedTicket = event.confirmTicket( user.getID() );
+                if (confirmedTicket != null)
+                {
                     user.saveTicket(confirmedTicket);
                 }
             }
+
             var accuiredTicket = user.getTicket();
-            if (accuiredTicket != null) {
+            if (accuiredTicket != null)
+            {
                 System.out.println(user.getName() + "   Ticket ID: " + accuiredTicket.getID() + "   Event ID: " + accuiredTicket.getEventID());
             }
         }

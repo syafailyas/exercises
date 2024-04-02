@@ -1,14 +1,14 @@
 package com.adepuu.exercises.session10;
 
-// LibraryMeterial class (Parent class)
-public class LibraryMaterial
+// Material class (Parent class)
+public class Material
 {
     private final int id;
     private final String title;
     private int availabilityCount;
     private boolean borrowed;
 
-    public LibraryMaterial(int id, String title, int availabilityCount)
+    public Material(int id, String title, int availabilityCount)
     {
         this.id = id;
         this.title = title;
@@ -42,11 +42,11 @@ public class LibraryMaterial
         {
             availabilityCount--;
             borrowed = true;
-            System.out.println("Borrowed: " + title);
+            System.out.println("Borrowed ID: " + id);
         }
         else
         {
-            System.out.println("Sorry, " + title + " is not available for borrowing.");
+            System.out.println("Sorry, id " + id + " is not available for borrowing.");
         }
     }
 
@@ -56,11 +56,11 @@ public class LibraryMaterial
         {
             availabilityCount++;
             borrowed = false;
-            System.out.println("Returned: " + title);
+            System.out.println("Returned ID: " + id);
         }
         else
         {
-            System.out.println("You did not borrow that book");
+            System.out.println("You did not borrow that id: " + id);
         }
     }
 
@@ -70,6 +70,13 @@ public class LibraryMaterial
         System.out.println("Title: " + title);
         System.out.println( "Availability: " + (availabilityCount > 0 ? "Available" : "Not Available") );
         System.out.println("Number of Availability: " + availabilityCount);
-        System.out.println( "Borrowed: " + (borrowed ? "Yes" : "No") );
+        if (borrowed)
+        {
+            System.out.println("Status: You are borrowing this id");
+        }
+        else
+        {
+            System.out.println("Status: You are not borrowing this id");
+        }
     }
 }

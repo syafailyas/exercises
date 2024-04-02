@@ -1,8 +1,10 @@
 package com.adepuu.oop.polymorphism.car;
 
 // Main class to demonstrate polymorphism
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         Car gasolineCar = new GasolineCar();
         Car electricCar = new ElectricCar();
 

@@ -1,8 +1,10 @@
 package com.adepuu.oop.polymorphism.creditcard;
 
 // Main class to demonstrate polymorphism
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         CreditCard visaCard = new VisaCard("1234567890123456", "John Doe");
         CreditCard masterCard = new MasterCard("2345678901234567", "Jane Doe");
         CreditCard amexCard = new AMEXCard("3456789012345678", "Jim Smith");

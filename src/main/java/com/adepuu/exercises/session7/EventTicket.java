@@ -2,29 +2,33 @@ package com.adepuu.exercises.session7;
 
 import java.util.UUID;
 
-public class Ticket {
+public class EventTicket
+{
     private final String ID;
     private String eventID;
 
-    public Ticket() {
+    public EventTicket()
+    {
         this("");
     }
 
-    public Ticket(String eventID) {
+    public EventTicket(String eventID)
+    {
         UUID uuid = UUID.randomUUID();
         this.ID = uuid.toString();
         this.eventID = eventID;
     }
 
-    public String getID() {
+    public String getID()
+    {
         return ID;
     }
-
-    public String getEventID() {
+    public String getEventID()
+    {
         return eventID;
     }
-
-    public void setEventID(String eventID) {
+    public void setEventID(String eventID)
+    {
         this.eventID = eventID;
     }
 }

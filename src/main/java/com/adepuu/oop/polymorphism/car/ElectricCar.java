@@ -1,24 +1,29 @@
 package com.adepuu.oop.polymorphism.car;
 
 // Implement ElectricCar class
-public class ElectricCar implements Car {
+public class ElectricCar implements Car
+{
     @Override
-    public void startEngine() {
+    public void startEngine()
+    {
         System.out.println("Starting electric engine...");
     }
 
     @Override
-    public void stopEngine() {
+    public void stopEngine()
+    {
         System.out.println("Stopping electric engine...");
     }
 
     @Override
-    public void move() {
+    public void move()
+    {
         System.out.println("Moving with electric engine...");
     }
 
     @Override
-    public void reverse() {
+    public void reverse()
+    {
         System.out.println("Reversing with electric engine...");
     }
 }

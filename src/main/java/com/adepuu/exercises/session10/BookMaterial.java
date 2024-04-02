@@ -1,11 +1,11 @@
 package com.adepuu.exercises.session10;
 
 // Book class (Child class)
-public class Book extends Material
+public class BookMaterial extends Material
 {
     private final String author;
 
-    public Book(int id, String title, String author, int availabilityCount)
+    public BookMaterial(int id, String title, String author, int availabilityCount)
     {
         super(id, title, availabilityCount);
         this.author = author;

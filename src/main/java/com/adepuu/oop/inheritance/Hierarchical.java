@@ -1,13 +1,17 @@
 package com.adepuu.oop.inheritance;
 
-class Cat extends Animal {
-    void purr() {
+class Cat extends Animal
+{
+    void purr()
+    {
         System.out.println("purr");
     }
 }
 
-public class Hierarchical {
-    public static void main(String[] args) {
+public class Hierarchical
+{
+    public static void main(String[] args)
+    {
         Cat cat  = new Cat();
         cat.purr();
         cat.eat();

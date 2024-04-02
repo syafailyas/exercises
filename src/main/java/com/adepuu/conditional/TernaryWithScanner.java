@@ -2,8 +2,10 @@ package com.adepuu.conditional;
 
 import java.util.Scanner;
 
-public class TernaryWithScanner {
-    public static void main(String[] args) {
+public class TernaryWithScanner
+{
+    public static void main(String[] args)
+    {
         // This example takes user input for marks and uses the ternary operator
         // to determine if the user has passed or failed the exam based on the marks entered
         Scanner input = new Scanner(System.in);

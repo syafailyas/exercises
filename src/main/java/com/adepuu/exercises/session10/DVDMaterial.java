@@ -1,11 +1,11 @@
 package com.adepuu.exercises.session10;
 
 // DVD class (Child class)
-public class DVD extends Material
+public class DVDMaterial extends Material
 {
     private final String director;
 
-    public DVD(int id, String title, String director, int availabilityCount)
+    public DVDMaterial(int id, String title, String director, int availabilityCount)
     {
         super(id, title, availabilityCount);
         this.director = director;

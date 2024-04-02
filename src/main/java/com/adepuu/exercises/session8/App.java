@@ -2,7 +2,8 @@ package com.adepuu.exercises.session8;
 
 import java.util.Scanner;
 
-public class App {
+public class App
+{
     /**
      * Manages user registration, login, and task management for the To-Do List application.
      * <p>
@@ -39,7 +40,8 @@ public class App {
      *     <li>Data does not need to be stored in a File. Instead, store it inside a Map or List and let the data gone when program finished</li>
      * </ul>
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         /*
          Create menu functionalities
          Split classes

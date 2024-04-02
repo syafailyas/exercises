@@ -1,5 +1,6 @@
 package com.adepuu.oop.superMethod;
 
-public interface LocalTransaction {
+public interface LocalTransaction
+{
     boolean getCentralBankApproval();
 }
